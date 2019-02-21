@@ -5,6 +5,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { ItemComponent } from "./items/item.component";
+import { TaskService } from "./shared/task/task.service";
 
 @NgModule({
     bootstrap: [
@@ -18,6 +19,9 @@ import { ItemComponent } from "./items/item.component";
     declarations: [
         AppComponent,
         ItemComponent
+    ],
+    providers: [
+        TaskService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

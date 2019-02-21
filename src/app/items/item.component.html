@@ -12,11 +12,13 @@
     <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
         ios.position="left">
     </ActionItem>
-    <Label class="action-bar-title" text="Details"></Label>
+    <Label class="action-bar-title" text="{{task.title}}"></Label>
 </ActionBar>
 
 <ScrollView class="page">
     <StackLayout class="page-placeholder">
+
+        <Label text="{{task.description}}"></Label>
         <Label text="Details work!"></Label>
 
         <!--Add your page content here-->
